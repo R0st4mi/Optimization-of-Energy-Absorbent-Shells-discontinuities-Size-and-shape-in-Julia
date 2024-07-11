@@ -1,5 +1,9 @@
 # Optimization-of-Energy-Absorbent-Shells-discontinuities-Size-and-shape-in-Julia
 In this research, the energy-absorbing behavior of some thin wall shell will be investigated by numerical solution in finite element method and in Abaqus software, and the size and shape of the absorber will be Optimized with proper discontinuities.
+In this research, the energy-absorbing behavior of a thin wall with an aluminum rec-tangular section will be investigated by numerical solution in finite element method and in Abaqus software, and to improve its energy absorption parameters, discontinuities will be created on the geometry, which regularized the folding pattern. The research approach is to improve the energy absorption behavior without fundamentally chang-ing the geometry. Discontinuities with different geometrical shapes, sizes, and numbers will be placed in different places in the model.
+For the optimization, considering the characteristics of the energy absorber, the SEA and CFE of the energy absorber are selected as the crashworthiness optimization objective functions. Then, the discontinuity size, number, and position are taken as the design variables.
+In this report we assume the number of variables to be two because of the complexity of polynomial response surface that provide an objective function for problem. This will explain in nex section. So the selected variables is diameter of first discontinuity on front wall(d_f1) and height of first discontinuity on front wall(h_f1). That means we have a discontinuity and we want to optimize the diameter and position of the discontinuity.
+
 The code of optimization in Julia:
 
 using Optim
